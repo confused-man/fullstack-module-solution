@@ -1,0 +1,128 @@
+/* global css
+--------------------------------------------- */
+
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    /* margin: 0;
+        padding: 0; */
+    background-color: #c3d8e8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header css
+--------------------------------------------- */
+
+header {
+    background-color: rgb(148, 197, 250);
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    min-height: 70%;
+    border-bottom: darkblue 3px solid;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+
+/* main css
+--------------------------------------------- */
+
+#container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.box {
+    float: left;
+    text-align: left;
+    width: 31%;
+    position: relative;
+    /* margin: auto; */
+}
+
+.items {
+    border: darkblue 3px solid;
+    padding: 2px 2px 5px 5px;
+    margin: 10px;
+    background-color: blanchedalmond;
+}
+
+.para1,
+.para2,
+.para3 {
+    margin: 2px;
+    clear: right;
+    padding-top: px;
+}
+
+.items h2 {
+    /* margin: 0; */
+    text-align: center;
+    border: blue 2px solid;
+    /* position: relative;
+        top: -20px;
+        right: -200px; */
+    float: right;
+    width: 100px;
+    height: 30px;
+}
+
+.item1 {
+    background-color: rgb(30, 255, 0);
+}
+
+.item2 {
+    background-color: rgb(255, 8, 0);
+}
+
+.item3 {
+    background-color: rgb(255, 247, 0);
+}
+
+
+/* media 
+-------------------------------------------------- */
+
+@media (max-width:991px) and (min-width:768px) {
+    * {
+        color: #940784;
+    }
+    .items {
+        background-color: #ebb35e;
+        border: #0e923a 2px solid;
+    }
+    .box {
+        float: none;
+        display: inline-block;
+        width: 49%;
+    }
+    #box-3 {
+        width: 99%;
+        background-color: black;
+        margin: 1px;
+    }
+}
+
+@media (max-width:767px) {
+    * {
+        color: rgb(9, 9, 148);
+    }
+    .box {
+        float: none;
+        display: inline-block;
+        text-align: left;
+        width: 90%;
+    }
+    .items {
+        background-color: aquamarine;
+        border: steelblue 2px solid;
+    }
+}
